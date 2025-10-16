@@ -3,6 +3,8 @@ import datetime
 import os
 import sys
 
+print("Đang thực hiện code...")
+
 # Thư mục chứa 2 file code Unity
 # Windows: r"D:\FPT Polytechnic\NhapMonLTGA\Unity Projects"
 # macOS: "/Users/khangng/Downloads/Hoc FPT/Unity project/Link-Unity-Projects"
@@ -27,3 +29,6 @@ subprocess.run(["git", "pull", "--rebase"])
 subprocess.run(["git", "push"])
 
 print("Upload complete!")
+
+print("\nHoàn tất! Nhấn Enter để thoát...")
+input()  # đợi nhấn Enter
