@@ -32,5 +32,5 @@ except subprocess.CalledProcessError as e:
 print("Upload hoàn tất!")
 
 # Kết thúc script ngay lập tức
-sys.exit(0)
+quit()
 
