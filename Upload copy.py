@@ -31,7 +31,6 @@ except subprocess.CalledProcessError as e:
 
 print("Upload hoàn tất!")
 
-# --- Chờ nhấn bất kỳ phím để thoát ---
-print("Nhấn bất kỳ phím nào để thoát...")
-readchar.readkey()  # đợi 1 phím
+# Kết thúc script ngay lập tức
 sys.exit(0)
+
