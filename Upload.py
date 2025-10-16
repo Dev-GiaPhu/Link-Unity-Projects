@@ -9,16 +9,21 @@ import sys
 project_path = r"D:\FPT Polytechnic\NhapMonLTGA\Unity Projects" if sys.platform.startswith("win") else "/Users/khangng/Downloads/Hoc FPT/Unity project/Link-Unity-Projects"
 os.chdir(project_path)
 
-# Git add 2 file code
-subprocess.run(["git", "add", "Upload.py", "Clone.py"])
+# Khởi động SSH agent (chỉ cần trên Mac/Linux, Windows thì bỏ dòng này)
+if not sys.platform.startswith("win"):
+    subprocess.run("eval $(ssh-agent -s)", shell=True)
+    subprocess.run("ssh-add ~/.ssh/id_ed25519", shell=True)
 
-# Git commit với timestamp
+# Git add tất cả file (bỏ qua file trong .gitignore)
+subprocess.run(["git", "add", "."])
+
+# Commit với timestamp
 subprocess.run(["git", "commit", "-m", f"Auto commit {datetime.datetime.now()}"])
 
-# Git pull trước để tránh xung đột
+# Pull trước để tránh xung đột
 subprocess.run(["git", "pull", "--rebase"])
 
-# Git push lên repository
+# Push lên repository
 subprocess.run(["git", "push"])
 
 print("Upload complete!")
