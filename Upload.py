@@ -3,6 +3,9 @@ import datetime
 import os
 import sys
 
+print(" ")
+print(" ")
+print(" ")
 print("Đang thực hiện code...")
 
 # Thư mục chứa 2 file code Unity
@@ -30,5 +33,4 @@ subprocess.run(["git", "push"])
 
 print("Upload complete!")
 
-print("\nHoàn tất! Nhấn Enter để thoát...")
-input()  # đợi nhấn Enter
+input("Nhấn Enter để thoát...")
