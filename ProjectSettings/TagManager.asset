@@ -10,6 +10,12 @@ TagManager:
   - E
   - CheckBase_Player
   - Collider
+  - Attack
+  - Icon_0
+  - Icon_1
+  - Icon_2
+  - Icon_3
+  - Icon_4
   layers:
   - Default
   - TransparentFX
