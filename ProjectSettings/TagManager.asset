@@ -30,6 +30,8 @@ TagManager:
   - Quit
   - Wall
   - Door
+  - Enemy_Attack
+  - Check_Player
   layers:
   - Default
   - TransparentFX
@@ -41,7 +43,7 @@ TagManager:
   - Enemy
   - Player
   - HitBox_Attack
-  - 
+  - HitBox_Attack_Enemy
   - 
   - 
   - 
