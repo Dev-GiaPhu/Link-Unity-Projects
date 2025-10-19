@@ -16,6 +16,16 @@ TagManager:
   - Icon_2
   - Icon_3
   - Icon_4
+  - Normal
+  - Ice
+  - Fire
+  - Stone
+  - Wind
+  - Skill
+  - Attack_HitBox
+  - Enemy
+  - Check_Base
+  - Check_Wall
   layers:
   - Default
   - TransparentFX
@@ -24,9 +34,9 @@ TagManager:
   - Water
   - UI
   - Collider_Map
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - HitBox_Attack
   - 
   - 
   - 
@@ -50,6 +60,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 499037541
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
