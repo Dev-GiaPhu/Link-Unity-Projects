@@ -26,6 +26,10 @@ TagManager:
   - Enemy
   - Check_Base
   - Check_Wall
+  - Play
+  - Quit
+  - Wall
+  - Door
   layers:
   - Default
   - TransparentFX
